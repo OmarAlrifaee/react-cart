@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import ContextProvider from "./context/ContextProvider";
 import Products from "./pages/Products";
 import ErrorBoundry from "./components/ErrorBoundry";
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: (
