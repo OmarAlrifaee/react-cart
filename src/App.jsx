@@ -1,11 +1,11 @@
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import ContextProvider from "./context/ContextProvider";
 import Products from "./pages/Products";
 import ErrorBoundry from "./components/ErrorBoundry";
 function App() {
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: "/",
       element: (
@@ -33,6 +33,7 @@ function App() {
   ]);
   return (
     <div className="App bg-dark">
+      <div style={{ backgroundColor: "red" }}>Test</div>
       <ContextProvider>
         <RouterProvider router={router} />
       </ContextProvider>
