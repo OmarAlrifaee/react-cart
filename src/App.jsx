@@ -33,7 +33,6 @@ function App() {
   ]);
   return (
     <div className="App bg-dark">
-      <div style={{ backgroundColor: "red" }}>Test</div>
       <ContextProvider>
         <RouterProvider router={router} />
       </ContextProvider>
